@@ -16,6 +16,45 @@ config.line_height = 1.2
 
 config.disable_default_key_bindings = true
 
+config.use_fancy_tab_bar = false
+config.colors = {
+  tab_bar = {
+    background = "#0b0022",
+    active_tab = {
+      bg_color = "#2b2042",
+      fg_color = "#c0c0c0",
+      intensity = "Normal",
+      underline = "Single",
+      italic = false,
+      strikethrough = false,
+    },
+    inactive_tab = {
+      bg_color = "#1b1032",
+      fg_color = "#808080",
+    },
+    inactive_tab_hover = {
+      bg_color = "#3b3052",
+      fg_color = "#909090",
+      italic = true,
+    },
+    new_tab = {
+      bg_color = "#1b1032",
+      fg_color = "#808080",
+    },
+    new_tab_hover = {
+      bg_color = "#3b3052",
+      fg_color = "#909090",
+      italic = true,
+    },
+  },
+}
+config.window_padding = {
+  left = 2,
+  right = 2,
+  top = 0,
+  bottom = 0,
+}
+
 local act = wezterm.action
 config.keys = {
   { key = "w", mods = "CMD", action = act.CloseCurrentTab({ confirm = true }) },
