@@ -58,8 +58,8 @@ config.window_padding = {
 local act = wezterm.action
 config.keys = {
   { key = "w", mods = "CMD", action = act.CloseCurrentTab({ confirm = true }) },
-  { key = "h", mods = "CMD", action = act.ActivateTabRelative(-1) },
-  { key = "l", mods = "CMD", action = act.ActivateTabRelative(1) },
+  { key = "j", mods = "CMD", action = act.ActivateTabRelative(-1) },
+  { key = "k", mods = "CMD", action = act.ActivateTabRelative(1) },
   { key = "c", mods = "CMD", action = act.CopyTo("Clipboard") },
   { key = "v", mods = "CMD", action = act.PasteFrom("Clipboard") },
   { key = "t", mods = "CMD", action = act.SpawnTab("CurrentPaneDomain") },
