@@ -64,7 +64,7 @@ config.keys = {
   { key = "v", mods = "CMD", action = act.PasteFrom("Clipboard") },
   { key = "t", mods = "CMD", action = act.SpawnTab("CurrentPaneDomain") },
   { key = "w", mods = "CMD", action = act.CloseCurrentTab({ confirm = true }) },
-  { key = "d", mods = "CMD", action = act.HideApplication },
+  { key = "h", mods = "CMD", action = act.HideApplication },
   { key = "f", mods = "CMD", action = act.Search({ CaseInSensitiveString = "" }) },
 }
 return config
